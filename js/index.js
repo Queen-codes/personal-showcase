@@ -26,8 +26,8 @@ function updateCurrentDayAndTime() {
   const currentDay = getCurrentDayOfWeek();
   const currentUtc = getCurrentUTCTime();
 
-  dayOfWeekElement.textContent = `Current Day of the Week: ${currentDay}`;
-  utcTimeElement.textContent = `Current UTC Time: ${currentUtc}`;
+  dayOfWeekElement.textContent = `${currentDay}`;
+  utcTimeElement.textContent = ` ${currentUtc}`;
 }
 
 setInterval(updateCurrentDayAndTime, 1000);
