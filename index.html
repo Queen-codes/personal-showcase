@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Queen's personal data</title>
+  </head>
+  <body>
+    <main>
+      <h1>My Personal Data and Info</h1>
+      <div class="picture">
+        <img
+          src="./assets/profilepic.jpg"
+          alt="Queen"
+          data-testid="slackDisplayImage"
+        />
+      </div>
+
+      <section class="name_and_picture">
+        <div class="name">
+          <h3 data-testid="slackUserName">
+            <span class="tag">Slack Name: </span>Queen
+          </h3>
+          <p class="track" data-testid="myTrack">
+            <span class="tag">Track :</span> Frontend
+          </p>
+        </div>
+      </section>
+
+      <section class="time">
+        <p id="currentDay" data-testid="currentDayOfTheWeek"></p>
+        <p id="currentUtc" data-testid="currentUTCTime"></p>
+      </section>
+
+      <div class="btn">
+        <button data-testid="githubURl">
+          <a href="https://github.com/Queen-codes/personal-showcase.git"
+            >My Github Repo</a
+          >
+        </button>
+      </div>
+    </main>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
