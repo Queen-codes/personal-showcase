@@ -15,7 +15,7 @@ function getCurrentDayOfWeek() {
 
 function getCurrentUTCTime() {
   const currentDate = new Date();
-  const utcTime = currentDate.toUTCString();
+  const utcTime = currentDate.getTime();
   return utcTime;
 }
 
